@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--TOP-->
         <scene sceneID="YUx-3D-R3v">
             <objects>
                 <tableViewController id="i13-9l-wWY" sceneMemberID="viewController">
@@ -20,25 +20,21 @@
                         <sections>
                             <tableViewSection id="ZCY-9d-0dN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zPF-64-rB3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pJo-kN-Nfi" style="IBUITableViewCellStyleDefault" id="zPF-64-rB3">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zPF-64-rB3" id="fDl-5i-OLV">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Book Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnu-nP-he7">
-                                                    <rect key="frame" x="16" y="11" width="325" height="21"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Book Search Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pJo-kN-Nfi">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="cnu-nP-he7" firstAttribute="centerY" secondItem="fDl-5i-OLV" secondAttribute="centerY" id="RGt-9w-fjN"/>
-                                                <constraint firstAttribute="trailing" secondItem="cnu-nP-he7" secondAttribute="trailing" id="qMb-1k-hea"/>
-                                                <constraint firstItem="cnu-nP-he7" firstAttribute="leading" secondItem="fDl-5i-OLV" secondAttribute="leading" constant="16" id="z6R-QW-9bs"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="vKE-SN-MOX" kind="show" id="Vtd-A4-lOe"/>
@@ -60,7 +56,7 @@
                             <outlet property="delegate" destination="i13-9l-wWY" id="hD4-lW-qV1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mnf-jT-8uM"/>
+                    <navigationItem key="navigationItem" title="TOP" id="mnf-jT-8uM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="It8-JO-jxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +78,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hxg-Gk-pa5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.53409618139266968" green="0.59629547595977783" blue="0.81492191553115845" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

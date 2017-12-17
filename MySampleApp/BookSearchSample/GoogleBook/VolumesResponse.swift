@@ -25,3 +25,13 @@ struct VolumeInfo: Codable {
 struct ImageLinks: Codable {
     let thumbnail: String
 }
+
+extension VolumeInfo {
+    func imageURL() -> URL? {
+        var imageURL: URL?
+        if let imageLinks = self.imageLinks {
+            imageURL = URL(string: imageLinks.thumbnail.convertHttps())
+        }
+        return imageURL
+    }
+}
