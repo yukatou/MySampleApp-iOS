@@ -55,6 +55,6 @@ extension GoogleBookAPI: TargetType {
     }
 
     var headers: [String : String]? {
-        return ["ContentType": "application/json"]
+        return ["Content-Type": "application/json"]
     }
 }
